@@ -1,0 +1,49 @@
+version: "4.1"
+name: p3_2
+type: C51
+deviceName: null
+packDir: null
+srcDirs:
+  - src
+virtualFolder:
+  name: <virtual_root>
+  files: []
+  folders: []
+dependenceList: []
+outDir: build
+miscInfo:
+  uid: c9a3e0073d544044aa8b3d5060baccc9
+targets:
+  Debug:
+    cppPreprocessAttrs:
+      defineList: []
+      incList:
+        - ../../Keil5/C51/INC
+        - ../../Keil5/C51/INC/Atmel
+      libList: []
+    excludeList: []
+    settings:
+      debugger: unknown
+    toolchain: Keil_C51
+    toolchainConfigMap:
+      Keil_C51:
+        options:
+          version: 2
+          afterBuildTasks: []
+          asm-compiler: {}
+          beforeBuildTasks: []
+          c/cpp-compiler:
+            optimization-level: level-8
+            optimization-type: SPEED
+          global:
+            ram-mode: SMALL
+            rom-mode: LARGE
+          linker:
+            output-format: elf
+            remove-unused: false
+    uploadConfigMap:
+      Custom:
+        bin: ""
+        commandLine: "\"C:\\Users\\icebl\\.eide\\bin\\python36\\python3.exe\" ./tools/stcflash.py -p COM3 \"${ExecutableName}.hex\""
+        eraseChipCommand: ""
+    uploader: Custom

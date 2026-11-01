@@ -1,0 +1,18 @@
+{
+    "configurations":  [
+                           {
+                               "name":  "Keil C51",
+                               "includePath":  [
+                                                   "${workspaceFolder}/**",
+                                                   "D:/keil5/C51/INC",
+                                                   "D:/Keil5/C51/INC/Atmel"
+                                               ],
+                               "defines":  [
+                                               "__C51__"
+                                           ],
+                               "cStandard":  "c89",
+                               "compilerPath":  ""
+                           }
+                       ],
+    "version":  4
+}
